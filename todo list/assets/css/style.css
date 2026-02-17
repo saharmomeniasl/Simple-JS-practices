@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.total {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    background-color: rgb(142, 184, 142);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40vw;
+    border-radius: 0.9rem;
+    gap: 10px;
+}
+
+.container button{
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    margin-top: 10px;
+}
+
+.container button:hover{
+    color: rgb(6, 134, 17);
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.container input{
+    border: none;
+    border-radius: 5px;
+    height: 27px;
+}
+
+.container h2{
+    color: rgba(0, 0, 0, 0.795);
+    background-color: rgb(195, 243, 184);
+    padding: 5px;
+    border-radius: 5px;
+    width: 11vw;
+}
+
+#p1{
+    background-color: rgba(245, 165, 165, 0.603);
+}
+

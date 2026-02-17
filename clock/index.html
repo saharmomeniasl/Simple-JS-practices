@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>clock</title>
+</head>
+<body dir="ltr">
+    <div class="clock">
+        <img src="./assets/media/clock1.png" class="clock-face">
+        <div class="hand hour"></div>
+        <div class="hand minute"></div>
+        <div class="hand second"></div>
+        <div class="center-dot"></div>
+    </div>
+
+    <div class="timeandtheme">
+        <div class="date" id="date"></div>
+        <select id="timezone" style="width: 10vw; height: 5vh; border-radius: 5px;">
+            <option value="Asia/Tehran">Tehran</option>
+            <option value="Europe/London">London</option>
+            <option value="America/New_York">New York</option>
+            <option value="Asia/Tokyo">Tokyo</option>
+            <option value="Asia/Baghdad">Baghdad</option>
+            <option value="Asia/Qatar">Doha</option>
+            <option value="Europe/Berlin">Berlin</option>
+            <option value="Asia/Tashkent">Tashkent</option>
+        </select>
+
+        <select id="theme" style="width: 10vw; height: 4vh; border-radius: 5px;">
+            <option value="">Dark</option>
+            <option value="light">Light</option>
+            <option value="blue">Blue</option>
+            <option value="purple">Purple</option>
+            <option value="green">Green</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+        </select>
+
+    </div>
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
