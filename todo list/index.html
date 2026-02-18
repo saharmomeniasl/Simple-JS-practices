@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>to do list</title>
+</head>
+
+<body style="background-color: beige;">
+    <div class="total">
+        <div class="container">
+            <h2>TO DO LIST</h2>
+            <label id="lbl1" style="color: rgb(34, 34, 34);">Write what you want, and do it!</label>
+            <input id="task-input" placeholder="Add a task">
+            <button onclick="addTask()">Add</button>
+            <div class="showtasks">
+                <label style="font-size: 0.9rem; color: brown;">Your tasks:</label>
+                <ul id="taskList"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
