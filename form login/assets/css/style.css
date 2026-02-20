@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Noto+Sans+Arabic:wght@100..900&family=Vazirmatn:wght@100..900&display=swap');
+
+*{
+    text-decoration: none;
+    font-family: Vazirmatn;
+    margin: 0;
+    padding: 0;
+}
+
+.total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    background-color: rgb(109, 166, 184);
+    border-radius: 1rem;
+    width: 66vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.container h2{
+    background-color: rgba(250, 235, 215, 0.596);
+    border-radius: 10px;
+    padding: 14px;
+    margin: 20px;
+}
+
+.container input{
+    width: 13vw;
+    height: 5vh;
+    border-radius: 8px;
+}
+
+#submit {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.644);
+    font-size: 13px;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+#submit:hover{
+    background-color: black;
+    transition: 0.6s ease-in-out;
+}
+
+/* استایل پایه برای پیام */
+#error, #message {
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.7rem;
+    display: inline-block;
+    max-width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* پیام خطا */
+.error {
+    background-color: #fdecea; /* پس‌زمینه قرمز روشن */
+    color: #d93025; /* متن قرمز تیره */
+    border: 1px solid #f5c6cb; /* حاشیه سبک قرمز */
+    position: relative;
+}
+
+/* آیکون هشدار قبل متن */
+.error::before {
+    content: "⚠️فیلدها را پر کنید";
+    margin-right: 6px;
+}
+
+/* پیام موفقیت */
+.success {
+    background-color: #e6f4ea; /* پس‌زمینه سبز روشن */
+    color: #188038; /* متن سبز تیره */
+    border: 1px solid #a3d9a5; /* حاشیه سبز */
+    position: relative;
+}
+
+/* آیکون تیک قبل متن */
+.success::before {
+    content: "✅";
+    margin-right: 6px;
+}
+
+/* انیمیشن کوچک شدن و محو شدن بعد از 3 ثانیه */
+@keyframes fadeOut {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-10px); }
+}
+
+.fade-out {
+    animation: fadeOut 1s ease forwards;
+    animation-delay: 3s; /* بعد از 3 ثانیه شروع شود */
+}

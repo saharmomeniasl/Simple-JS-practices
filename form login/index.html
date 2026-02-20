@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>sign up</title>
+</head>
+<body style="background-color: rgb(240, 238, 238);">
+    <div class="total">
+        <div class="container" style="background-color: rgb(109, 179, 109);">
+            <h2>
+                ثبت نام
+            </h2>
+            <label for="">نام کاربری</label>
+            <input type="text" id="user" placeholder="enter your ID">
+            <label>ایمیل</label>
+            <input type="email" id="email-inp" placeholder="enter your email" style="width: 16vw">
+            <label for="">رمز عبور</label>
+            <input type="text" id="pass1" placeholder="enter your password">
+            <label for="">تکرار رمز عبور</label>
+            <input type="text" id="pass2" placeholder="enter your password again">
+            <div id="message" class="error"></div>
+            <button onclick="register()" id="submit">تایید</button>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
