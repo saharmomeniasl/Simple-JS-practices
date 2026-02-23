@@ -3,6 +3,13 @@
     overflow-y: hidden;
 }
 
+#changetheme{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(197, 197, 197);
+}
+
 .display {
     background-color: rgb(208, 219, 231);
     color: rgb(66, 66, 66);
@@ -24,13 +31,14 @@
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    background-color: rgb(121, 121, 121);
+    background-color: rgb(43, 43, 43);
+    gap: 8px;
 }
 
 .calculator{
     display: flex;
     flex-direction: column;
-    background-color: rgb(43, 43, 43);
+    background-color: rgb(26, 26, 26);
     border-radius: 1rem;
     width: 40vw;
 }
@@ -41,7 +49,8 @@
     height: 10vh;
     border-radius: 0.7rem;
     font-weight: 600;
-    background-color: rgb(208, 219, 231);
+    color: white;
+    background-color: rgba(75, 75, 75, 0.849);
     border: 1px solid black;
 }
 
@@ -53,7 +62,7 @@
 }
 
 #all-clear , #del , #percent , #division , #multiplication , #subtraction , #plural {
-    color: chocolate;
+    color: rgb(255, 120, 24);
 }
 
 #equal{
