@@ -47,55 +47,55 @@
     font-size: 13px;
     padding: 6px;
     border-radius: 8px;
+    width: 5vw;
 }
 
 #submit:hover{
-    background-color: black;
+    background-color: rgb(0, 58, 13);
     transition: 0.6s ease-in-out;
 }
 
-/* استایل پایه برای پیام */
-#error, #message {
+#message {
+    opacity: 0;
+    visibility: hidden;
     padding: 10px 15px;
-    margin-top: 10px;
     border-radius: 6px;
     font-weight: bold;
     font-size: 0.7rem;
-    display: inline-block;
     max-width: 100%;
     box-sizing: border-box;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
-/* پیام خطا */
+#message.error,
+#message.success {
+    opacity: 1;
+    visibility: visible;
+    display: inline-block;
+}
+
 .error {
-    background-color: #fdecea; /* پس‌زمینه قرمز روشن */
-    color: #d93025; /* متن قرمز تیره */
-    border: 1px solid #f5c6cb; /* حاشیه سبک قرمز */
-    position: relative;
+    background-color: #fdecea;
+    color: #d93025;
+    border: 1px solid #f5c6cbbe;
 }
 
-/* آیکون هشدار قبل متن */
 .error::before {
-    content: "⚠️فیلدها را پر کنید";
+    content: "";
     margin-right: 6px;
 }
 
-/* پیام موفقیت */
 .success {
-    background-color: #e6f4ea; /* پس‌زمینه سبز روشن */
-    color: #188038; /* متن سبز تیره */
-    border: 1px solid #a3d9a5; /* حاشیه سبز */
-    position: relative;
+    background-color: #e6f4ea;
+    color: #188038;
+    border: 1px solid #a3d9a5;
 }
 
-/* آیکون تیک قبل متن */
 .success::before {
     content: "✅";
     margin-right: 6px;
 }
 
-/* انیمیشن کوچک شدن و محو شدن بعد از 3 ثانیه */
 @keyframes fadeOut {
     0% { opacity: 1; transform: translateY(0); }
     100% { opacity: 0; transform: translateY(-10px); }
@@ -103,5 +103,5 @@
 
 .fade-out {
     animation: fadeOut 1s ease forwards;
-    animation-delay: 3s; /* بعد از 3 ثانیه شروع شود */
+    animation-delay: 3s;
 }
