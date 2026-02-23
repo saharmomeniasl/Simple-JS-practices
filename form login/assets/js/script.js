@@ -6,38 +6,32 @@ function register() {
     const pass2 = document.getElementById("pass2").value;
     const messageDiv = document.getElementById("message");
 
-    // پاک کردن کلاس‌های قبلی
     messageDiv.className = "";
 
-    // چک خالی بودن فیلدها
     if (username === "" || email === "" || pass1 === "" || pass2 === "") {
         messageDiv.textContent = "همه فیلدها باید پر شوند!";
         messageDiv.className = "error";
         return;
     }
 
-    // نام کاربری حداقل 4 کاراکتر
-    if (username.length < 4) {
-        messageDiv.textContent = "نام کاربری باید حداقل ۴ کاراکتر باشد";
+    if (username.length < 3) {
+        messageDiv.textContent = "نام کاربری باید حداقل 3 کاراکتر باشد";
         messageDiv.className = "error";
         return;
     }
 
-    // حداقل طول رمز عبور
     if (pass1.length < 8) {
-        messageDiv.textContent = "رمز عبور باید حداقل ۸ کاراکتر باشد";
+        messageDiv.textContent = "رمز عبور باید حداقل 8 کاراکتر باشد";
         messageDiv.className = "error";
         return;
     }
-
-    // تطابق رمز عبور
+    
     if (pass1 !== pass2) {
         messageDiv.textContent = "رمز عبور و تکرار آن مطابقت ندارند";
         messageDiv.className = "error";
         return;
     }
 
-    // موفقیت
     messageDiv.textContent = "ثبت نام موفقیت‌آمیز بود!";
     messageDiv.className = "success fade-out";
 
@@ -45,3 +39,4 @@ function register() {
         window.location.href = "index2.html";
     }, 1500);
 }
+
