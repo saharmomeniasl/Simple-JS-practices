@@ -1,0 +1,45 @@
+*{
+    border: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  padding: 50px;
+}
+
+.accordion {
+  width: 500px;
+  margin: auto;
+}
+
+.item {
+  background: rgb(219, 219, 219);
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.title {
+  width: 100%;
+  padding: 15px;
+  background: #68c94b;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 15px;
+}
+
+.content p {
+  margin: 15px 0;
+}
