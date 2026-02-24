@@ -1,4 +1,4 @@
-# Smooth Accordion Component
+## Smooth Accordion Component
 
 This is a simple **Accordion UI Component** built with **HTML, CSS, and JavaScript**.  
 It demonstrates a smooth slide-down animation when clicking on sections to reveal their content.
