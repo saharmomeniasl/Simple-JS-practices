@@ -1,6 +1,5 @@
 document.getElementById("startBtn").addEventListener("click", () => {
 
-    
     if (num === end) {
         alert("Start and end numbers should not be equal");
         return;
